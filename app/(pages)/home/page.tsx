@@ -60,7 +60,7 @@ const HomePages = () => {
     },
     {
       icon: Car,
-      title: "2023-24 Models",
+      title: "2024-25 Models",
       description: "Latest Toyota Innova Crysta fleet"
     },
     {
@@ -296,7 +296,7 @@ const HomePages = () => {
               </motion.a>
               
               <motion.a
-                href={`tel:${Info.contact.phone}`}
+                href={`tel:${Info.contact.phone[0]}`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-3 backdrop-blur-sm bg-white/10 hover:bg-white hover:text-gray-900 transition-all duration-300 font-[family-name:var(--font-inter)]"

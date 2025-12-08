@@ -19,6 +19,7 @@ import {
   Route,
   CheckCircle2,
 } from "lucide-react";
+import { Info } from "@/lib/constants/information";
 
 export default function About() {
   const { AboutBanner } = assets;
@@ -31,7 +32,7 @@ export default function About() {
     },
     {
       number: "500+",
-      label: "Happy Customers",
+      label: "Delighted Customers",
       icon: <Users className="w-6 h-6 text-blue-600" />,
     },
     {
@@ -53,7 +54,7 @@ export default function About() {
         "Years of expertise in crafting memorable journeys across South India with perfect execution",
     },
     {
-      title: "500+ Happy & Delighted Customers",
+      title: "500+ Delighted Customers",
       description:
         "Join our family of delighted travelers who experienced the best of South Indian hospitality",
     },
@@ -73,8 +74,6 @@ export default function About() {
         "Tailored itineraries designed to match your preferences, budget, and travel style",
     },
   ];
-
- 
 
   return (
     <div className="flex flex-col">
@@ -308,13 +307,20 @@ export default function About() {
                   journey.
                 </p>
 
-                <motion.button
+                <motion.a
+                  href={`https://wa.me/${
+                    Info.contact?.whatsapp
+                  }?text=${encodeURIComponent(
+                    `Hello! I want to book the ride`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-4 py-2 rounded-sm bg-white text-primary font-semibold text-lg shadow-lg hover:bg-gray-100 transition-all"
+                  className="px-4 py-2 rounded-sm bg-white text-primary font-semibold text-lg shadow-lg hover:bg-gray-100 transition-all cursor-pointer"
                 >
                   Book Your Ride Now
-                </motion.button>
+                </motion.a>
               </div>
             </motion.div>
           </motion.section>

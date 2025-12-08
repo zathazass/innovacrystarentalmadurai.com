@@ -10,9 +10,9 @@ export const Info = {
     pincode :625003
   },
   contact: {
-    phone: ["+918608153862", "+919087967622"],
+    phone: ["+919994667622", "+919087967622"],
     email: "murugantravelsmadurai7@gmail.com",
-    whatsapp: "+918608153862"
+    whatsapp: "+919994667622"
   },
   gstin: "33BAQPJ1077F1ZR",
 };

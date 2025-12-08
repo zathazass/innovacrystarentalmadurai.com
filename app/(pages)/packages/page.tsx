@@ -208,6 +208,7 @@ const PopularPackages = () => {
                     variants={buttonVariants}
                     initial="initial"
                     whileHover="hover"
+                     target="_blank"
                     whileTap="tap"
                     className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-2"
                   >

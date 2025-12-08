@@ -93,7 +93,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-600 mt-6 pt-4 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} Copyright Madurai Dhaksha Tours and Travels.&nbsp;All Rights Reserved.
+            &copy; {currentYear} Copyright Madurai Murugan Tours and Travels.&nbsp;All Rights Reserved.
           </p>
         </div>
       </div>
